@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+ * animate
+ * -------------------
+ * author 严蕊
+ * -------------------
+ */
+
+.animate-box{
+  opacity: 0;
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.animated-fast{
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
